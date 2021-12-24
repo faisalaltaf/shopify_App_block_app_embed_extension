@@ -1,0 +1,27 @@
+{% render "wixpa"%}
+{% schema %}
+{
+  "name": "Party",
+  "target": "body",
+  "stylesheet": "image-gallery.css",
+  "javascript": "party-button.js",
+  "class": "shopifyextension"
+  "settings": [],
+
+"name": "Slideshow",
+  "target": "head",
+  "tag": "section",
+  "templates": ["product"],
+  "class": "slideshow",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    }
+  ]
+
+}
+
+
+{% endschema %}
